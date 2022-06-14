@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: helloworld-app
+  name: helloworld-app
+  namespace: demo-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloworld-app
+  template:
+    metadata:
+      labels:
+        app: helloworld-app
+    spec:
+      containers:
+      - image: docker.io/ibmcom/helloworld
+        name: helloworld-app
+        imagePullPolicy: Always
