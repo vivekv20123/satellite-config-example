@@ -3,8 +3,9 @@ kind: Deployment
 metadata:
   labels:
     app: helloworld-app
+    razee/watch-resource: lite
   name: helloworld-app
-  namespace: demo-namespace
+  namespace: demo-namespace  
 spec:
   replicas: 1
   selector:

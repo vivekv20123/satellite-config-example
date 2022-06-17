@@ -5,7 +5,7 @@ metadata:
   namespace: demo-namespace
   labels:
     app: helloworld-svc
-    razee/watch-resource: detail
+    razee/watch-resource: lite
 spec:
   selector:
     app: helloworld-app

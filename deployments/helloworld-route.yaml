@@ -3,6 +3,8 @@ kind: Route
 metadata:
   name: helloworld-route
   namespace: demo-namespace
+  labels:
+    razee/watch-resource: lite
 spec:
   port:
     targetPort: 8080
