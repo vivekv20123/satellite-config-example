@@ -6,6 +6,7 @@ metadata:
   labels:
     razee/watch-resource: lite
 spec:
+  path: "/helloworld"
   port:
     targetPort: 8080
   to:
