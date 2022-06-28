@@ -1,6 +1,6 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: demo-namespace
+  name: toolchain-ns
   labels:
-    name: demo-namespace
+    name: toolchain-ns
