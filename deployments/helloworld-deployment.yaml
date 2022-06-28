@@ -4,6 +4,7 @@ metadata:
   labels:
     app: helloworld-app
     razee/watch-resource: lite
+    dummy: test
   name: helloworld-app
   namespace: toolchain-ns
 spec:
