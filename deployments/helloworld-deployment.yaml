@@ -5,7 +5,7 @@ metadata:
     app: helloworld-app
     razee/watch-resource: lite
   name: helloworld-app
-  namespace: demo-namespace  
+  namespace: toolchain-ns
 spec:
   replicas: 1
   selector:
