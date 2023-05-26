@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: helloworld-app
+    app: helloworld-app01
     razee/watch-resource: lite
     dummy: test
-  name: helloworld-app
+  name: helloworld-app01
   namespace: toolchain-ns
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: helloworld-app
+      app: helloworld-app01
   template:
     metadata:
       labels:
-        app: helloworld-app
+        app: helloworld-app01
     spec:
       containers:
       - image: icr.io/satellite-config/helloworld
-        name: helloworld-app
+        name: helloworld-app01
         imagePullPolicy: Always
